@@ -1,10 +1,10 @@
-## 欢迎来到刘洪太的博客，来跟我一起学习Git吧！
+## <font size="10">迎来到刘洪太的博客，来跟我一起学习Git吧！</font>
 
-对不起，<a href="https://www.liaoxuefeng.com/">廖雪峰先生，因为您写的Git教程太好了，我实在忍不住要抄袭一下您的教程，这里附上您的博客教程，也希望有更多的初学者能够受益！
+对不起，<a href="https://www.liaoxuefeng.com/">廖雪峰</a>先生，因为您写的Git教程太好了，我实在忍不住要抄袭一下您的教程，这里附上您的博客教程，也希望有更多的初学者能够受益！
 
-### Markdown
+### Git教程
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+史上最浅显易懂的Git教程！不管你信不信，我信了！
 
 ```markdown
 Syntax highlighted code block
