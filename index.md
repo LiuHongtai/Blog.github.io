@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## 欢迎来到刘洪太的博客，来跟我一起学习Git吧！
 
-You can use the [editor on GitHub](https://github.com/LiuHongtai/Blog.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+对不起，<a href="https://www.liaoxuefeng.com/">廖雪峰先生，因为您写的Git教程太好了，我实在忍不住要抄袭一下您的教程，这里附上您的博客教程，也希望有更多的初学者能够受益！
 
 ### Markdown
 
