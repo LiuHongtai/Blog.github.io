@@ -1,44 +1,27 @@
+## Getting Started
 
-#### [首页](?file=home-首页)
+* [Getting Started with Kingfisher](https://github.com/onevcat/Kingfisher/wiki/Getting-Started-with-Kingfisher)
+    * [Install Kingfisher](https://github.com/onevcat/Kingfisher/wiki/Installation-Guide)
+    * [Cheat Sheet](https://github.com/onevcat/Kingfisher/wiki/Cheat-Sheet)
+* [API Reference](http://onevcat.github.io/Kingfisher/)
 
-##### 前端开发参考
-- [前端简介](?file=001-前端开发参考/00-前端简介 "前端简介")
-- [文件配置](?file=001-前端开发参考/01-文件配置 "文件配置")
-- [路由配置](?file=001-前端开发参考/02-路由配置 "路由配置")
-- [菜单配置](?file=001-前端开发参考/03-菜单配置 "菜单配置")
-- [控制器基础](?file=001-前端开发参考/04-控制器基础 "控制器基础")
-- [浏览页配置](?file=001-前端开发参考/05-浏览页配置 "浏览页配置")
-- [编辑页配置](?file=001-前端开发参考/06-编辑页配置 "编辑页配置")
-- **编辑页配置**
-    - [表单基础配置](?file=001-前端开发参考/09-编辑页配置/01-表单基础配置 "表单基础配置")
-    - [编辑页自定义按钮](?file=001-前端开发参考/09-编辑页配置/02-编辑页自定义按钮 "编辑页自定义按钮")
-    - [子表配置](?file=001-前端开发参考/09-编辑页配置/03-子表配置 "子表配置")
-    - [附件配置](?file=001-前端开发参考/09-编辑页配置/04-附件配置 "附件配置")
-    - [工作流配置](?file=001-前端开发参考/09-编辑页配置/05-工作流配置 "工作流配置")
-- [其它配置项](?file=001-前端开发参考/99-其它配置项 "其它配置项")
+## Migration Guide
 
-##### 后端开发参考
-- [后端简介](?file=002-后端开发参考/00-后端简介 "后端简介")
-- [标准页面-列表](?file=002-后端开发参考/01-标准页面-列表 "标准页面-列表")
-- [标准页面-列表导出](?file=002-后端开发参考/02-标准页面-列表导出 "标准页面-列表导出")
-- [标准页面-新增](?file=002-后端开发参考/03-标准页面-新增 "标准页面-新增")
-- [标准页面-编辑](?file=002-后端开发参考/04-标准页面-编辑 "标准页面-编辑")
-- [标准页面-详情](?file=002-后端开发参考/05-标准页面-详情 "标准页面-详情")
-- [标准页面-详情页导出](?file=002-后端开发参考/06-标准页面-详情页导出 "标准页面-详情页导出")
-- [标准页面-详情页附件](?file=002-后端开发参考/07-标准页面-详情页附件 "标准页面-详情页附件")
-- [标准页面-删除](?file=002-后端开发参考/08-标准页面-删除 "标准页面-删除")
-- [工作流](?file=002-后端开发参考/09-工作流 "工作流")
-- [附件转换](?file=002-后端开发参考/10-附件转换 "附件转换")
-- [代码模板](?file=002-后端开发参考/11-代码模板 "代码模板")
-- [动软生成器代码生成](?file=002-后端开发参考/12-动软生成器代码生成 "动软生成器代码生成")
-- [自定义页面开发](?file=002-后端开发参考/13-自定义页面开发 "自定义页面开发")
-- [公共方法使用](?file=002-后端开发参考/14-公共方法使用 "公共方法使用")
+* [3.0 Migration Guide](https://github.com/onevcat/Kingfisher/wiki/Kingfisher-3.0-Migration-Guide)
+* [2.0 Migration Guide](https://github.com/onevcat/Kingfisher/wiki/Kingfisher-2.0-Migration-Guide)
 
-##### A&Q
-- [ht1](?file=003-A&Q/01-ht1 "ht1")
-- [ht2](?file=003-A&Q/02-ht2 "ht2")
+## Communication
 
-##### MarkDown基础
-- [Markdown快速开始](?file=004-MarkDown基础/01-Markdown快速开始 "Markdown快速开始")
-- [语法高亮](?file=004-MarkDown基础/02-语法高亮 "语法高亮")
-- [流程图](?file=004-MarkDown基础/03-流程图 "流程图")
+* [FAQ](https://github.com/onevcat/Kingfisher/wiki/FAQ)
+* [Ask a question](http://stackoverflow.com/search?q=kingfisher)
+* [Submit an issue](https://github.com/onevcat/Kingfisher/issues/new)
+* [Open a pull request](https://github.com/onevcat/Kingfisher/compare)
+
+## Information
+
+* [Change Log](https://github.com/onevcat/Kingfisher/blob/master/CHANGELOG.md)
+
+作者：EyreFree
+链接：http://www.jianshu.com/p/c187fd088b71
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
