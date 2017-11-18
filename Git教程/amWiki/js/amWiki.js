@@ -148,28 +148,28 @@ $(function () {
             $filter.val('').trigger('input2');
         });
         //显示svg图标
-        if (sessionStorage['AMWikiIconsSvg']) {
-            $('#svgSymbols').append(sessionStorage['AMWikiIconsSvg']);
-        } else {
-            $.get('amWiki/images/icons.svg', function (svg) {
-                sessionStorage['AMWikiIconsSvg'] = svg;
-                $('#svgSymbols').append(svg);
-            }, 'text').fail(function () {
-                if (typeof AWPageMounts != 'undefined') {
-                    sessionStorage['AMWikiIconsSvg'] = AWPageMounts['icon'].content;
-                    $('#svgSymbols').append(AWPageMounts['icon'].content);
-                }
-            });
-        }
+        // if (sessionStorage['AMWikiIconsSvg']) {
+        //     $('#svgSymbols').append(sessionStorage['AMWikiIconsSvg']);
+        // } else {
+        //     $.get('amWiki/images/icons.svg', function (svg) {
+        //         sessionStorage['AMWikiIconsSvg'] = svg;
+        //         $('#svgSymbols').append(svg);
+        //     }, 'text').fail(function () {
+        //         if (typeof AWPageMounts != 'undefined') {
+        //             sessionStorage['AMWikiIconsSvg'] = AWPageMounts['icon'].content;
+        //             $('#svgSymbols').append(AWPageMounts['icon'].content);
+        //         }
+        //     });
+        // }
         //目录悬浮窗展开折叠
-        $contents.children('.btn').on('click', function (e) {
-            $contents.toggleClass('on').removeClass('hover');
-        });
-        $contents.hover(function () {
-            $contents.addClass('hover');
-        }, function () {
-            $contents.removeClass('hover');
-        });
+        // $contents.children('.btn').on('click', function (e) {
+        //     $contents.toggleClass('on').removeClass('hover');
+        // });
+        // $contents.hover(function () {
+        //     $contents.addClass('hover');
+        // }, function () {
+        //     $contents.removeClass('hover');
+        // });
         //开启滚动条
         $('.scroller').scrollbar();
         $('#backTop').on('click', function () {
@@ -675,5 +675,3 @@ $(function () {
     };
 
 });
-
-
