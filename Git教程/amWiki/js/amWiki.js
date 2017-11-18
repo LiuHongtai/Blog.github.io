@@ -79,6 +79,8 @@ $(function () {
         $menuBar.on('click', 'h5', function () {
             var $this = $(this),
                 $next = $this.next('ul');
+            var path = $this.find("a").attr("href").split('file=')[1];
+            changePage(path);
             if ($this.hasClass('on')) {
                 $this.removeClass('on');
                 $next.slideUp(200, function () {
@@ -355,7 +357,7 @@ $(function () {
 
     //改变导航显示
     var changeNav = function (path) {
-        if (/^home[-_].*?/.test(path) || path == '首页') {
+        if (/^home[-_].*?/.test(path) || path == 'Git教程') {
             $menuBar.find('h4').addClass('on');
             $menuBar.find('a').removeClass('on');
             changeSibling(null);
@@ -369,7 +371,7 @@ $(function () {
                     //本层加高亮
                     var $prev = $this.addClass('on').parent().parent().show().prev().addClass('on');
                     //父级高亮
-                    showNavParents($prev);
+                    //showNavParents($prev);
                     //改变上下篇切换
                     changeSibling($this.parent());
                 } else {
@@ -384,7 +386,7 @@ $(function () {
         $menuBar.trigger('scrollbar');
     };
 
-    //返回首页
+    //返回Git教程
     var backHome = function () {
         docs.loadPage(homePage.path, function (state, content) {
             if (state == 'success') {
@@ -451,7 +453,7 @@ $(function () {
     var loadNav = function (callback) {
         var fillNav = function (data) {
             $menuBar.find('.scroller-content').html(marked(data));
-            //首页
+            //Git教程
             var menuBarHome = $menuBar.find('h4');
             homePage.text = menuBarHome.text();
             homePage.url = menuBarHome.find('a').attr('href');
@@ -460,7 +462,8 @@ $(function () {
             //列表
             $menuBar.find('h5').each(function () {
                 var $this = $(this);
-                $this.html('<svg><use xlink:href="#icon:navArrow"></use></svg><span>' + $this.text() + '</span>')
+                var path = $this.find('a').attr('href');
+                $this.html('<svg><use xlink:href="#icon:navArrow"></use></svg><a href = '+ path +'><span>' + $this.text() + '</span></a>')
             });
             $menuBar.trigger('scrollbar');
             var pathList = [];
@@ -534,12 +537,12 @@ $(function () {
             return;
         }
         //打开页面立即比较页面挂载数据时间与本地缓存更新时间
-        //  因为首页总是更新的，如果首页页面挂载数据时间大于本地缓存时间，则挂载数据一定已经经过重建
+        //  因为Git教程总是更新的，如果Git教程页面挂载数据时间大于本地缓存时间，则挂载数据一定已经经过重建
         var homePath = AWPageMounts['home'].name.replace(/\.md$/, '');
         var homeStorageTime = storage.readTime(homePath);
         //如果页面挂载数据经过了重建，开始更新，读取所有挂载数据插入到本地缓存，完成后删除释放资源占用
         if (AWPageMounts['home'].timestamp > homeStorageTime) {
-            //首页
+            //Git教程
             storage.saveDoc(homePath, AWPageMounts['home'].content);
             delete AWPageMounts['home'];
             //其他文档
@@ -596,7 +599,7 @@ $(function () {
 
     //解析地址参数
     var curPath = tools.getURLParameter('file');
-    curPath = !curPath ? '首页' : decodeURI(curPath);
+    curPath = !curPath ? 'Git教程' : decodeURI(curPath);
     curPath = curPath.replace(/%26/g, '&');
 
     //加载导航
@@ -627,7 +630,7 @@ $(function () {
             //当没有状态记录时
             else {
                 path = tools.getURLParameter('file');
-                path = !path ? '首页' : decodeURI(path);
+                path = !path ? 'Git教程' : decodeURI(path);
                 path = path.replace(/%26/g, '&');
                 //判断 url 路径是否和当前一样，不一样才跳转
                 if (path != curPath) {
