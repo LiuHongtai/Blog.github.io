@@ -67,58 +67,58 @@ $(function () {
 
     //页面基本显示与操作
     (function () {
-        // //菜单折叠
-        // $menuBar.on('click', 'h4', function () {
-        //     var $this = $(this);
-        //     if (!$this.hasClass('on')) {
-        //         $this.addClass('on');
-        //         $menuBar.find('a').removeClass('on');
-        //     }
-        //     $menuBar.find('h5').removeClass('on').next('ul').hide();
-        // });
-        // $menuBar.on('click', 'h5', function () {
-        //     var $this = $(this),
-        //         $next = $this.next('ul');
-        //     if ($this.hasClass('on')) {
-        //         $this.removeClass('on');
-        //         $next.slideUp(200, function () {
-        //             $menuBar.trigger('scrollbar');
-        //         });
-        //     } else {
-        //         $this.addClass('on');
-        //         $next.slideDown(200, function () {
-        //             $menuBar.trigger('scrollbar');
-        //         });
-        //     }
-        // });
-        // $menuBar.on('click', 'strong', function () {
-        //     var $this = $(this),
-        //         $next = $this.next('ul');
-        //     if ($this.hasClass('on')) {
-        //         $this.removeClass('on');
-        //         $next.slideUp(200, function () {
-        //             $menuBar.trigger('scrollbar');
-        //         });
-        //     } else {
-        //         $this.addClass('on');
-        //         $next.slideDown(200, function () {
-        //             $menuBar.trigger('scrollbar');
-        //         });
-        //     }
-        // });
-        // //响应式菜单
-        // $menuIcon.on('click', function () {
-        //     var $this = $(this);
-        //     if ($this.hasClass('close')) {
-        //         $this.removeClass('close')
-        //             .find('use').attr('xlink:href', '#icon:navStart');
-        //         $nav.removeClass('on');
-        //     } else {
-        //         $this.addClass('close')
-        //             .find('use').attr('xlink:href', '#icon:navClose');
-        //         $nav.addClass('on');
-        //     }
-        // });
+        //菜单折叠
+        $menuBar.on('click', 'h4', function () {
+            var $this = $(this);
+            if (!$this.hasClass('on')) {
+                $this.addClass('on');
+                $menuBar.find('a').removeClass('on');
+            }
+            $menuBar.find('h5').removeClass('on').next('ul').hide();
+        });
+        $menuBar.on('click', 'h5', function () {
+            var $this = $(this),
+                $next = $this.next('ul');
+            if ($this.hasClass('on')) {
+                $this.removeClass('on');
+                $next.slideUp(200, function () {
+                    $menuBar.trigger('scrollbar');
+                });
+            } else {
+                $this.addClass('on');
+                $next.slideDown(200, function () {
+                    $menuBar.trigger('scrollbar');
+                });
+            }
+        });
+        $menuBar.on('click', 'strong', function () {
+            var $this = $(this),
+                $next = $this.next('ul');
+            if ($this.hasClass('on')) {
+                $this.removeClass('on');
+                $next.slideUp(200, function () {
+                    $menuBar.trigger('scrollbar');
+                });
+            } else {
+                $this.addClass('on');
+                $next.slideDown(200, function () {
+                    $menuBar.trigger('scrollbar');
+                });
+            }
+        });
+        //响应式菜单
+        $menuIcon.on('click', function () {
+            var $this = $(this);
+            if ($this.hasClass('close')) {
+                $this.removeClass('close')
+                    .find('use').attr('xlink:href', '#icon:navStart');
+                $nav.removeClass('on');
+            } else {
+                $this.addClass('close')
+                    .find('use').attr('xlink:href', '#icon:navClose');
+                $nav.addClass('on');
+            }
+        });
         $nav.on('navchange searchon searchoff', function (e) {
             $menuIcon.removeClass('close')
                 .find('use').attr('xlink:href', '#icon:navStart');
@@ -148,28 +148,28 @@ $(function () {
             $filter.val('').trigger('input2');
         });
         //显示svg图标
-        // if (sessionStorage['AMWikiIconsSvg']) {
-        //     $('#svgSymbols').append(sessionStorage['AMWikiIconsSvg']);
-        // } else {
-        //     $.get('amWiki/images/icons.svg', function (svg) {
-        //         sessionStorage['AMWikiIconsSvg'] = svg;
-        //         $('#svgSymbols').append(svg);
-        //     }, 'text').fail(function () {
-        //         if (typeof AWPageMounts != 'undefined') {
-        //             sessionStorage['AMWikiIconsSvg'] = AWPageMounts['icon'].content;
-        //             $('#svgSymbols').append(AWPageMounts['icon'].content);
-        //         }
-        //     });
-        // }
+        if (sessionStorage['AMWikiIconsSvg']) {
+            $('#svgSymbols').append(sessionStorage['AMWikiIconsSvg']);
+        } else {
+            $.get('amWiki/images/icons.svg', function (svg) {
+                sessionStorage['AMWikiIconsSvg'] = svg;
+                $('#svgSymbols').append(svg);
+            }, 'text').fail(function () {
+                if (typeof AWPageMounts != 'undefined') {
+                    sessionStorage['AMWikiIconsSvg'] = AWPageMounts['icon'].content;
+                    $('#svgSymbols').append(AWPageMounts['icon'].content);
+                }
+            });
+        }
         //目录悬浮窗展开折叠
-        // $contents.children('.btn').on('click', function (e) {
-        //     $contents.toggleClass('on').removeClass('hover');
-        // });
-        // $contents.hover(function () {
-        //     $contents.addClass('hover');
-        // }, function () {
-        //     $contents.removeClass('hover');
-        // });
+        $contents.children('.btn').on('click', function (e) {
+            $contents.toggleClass('on').removeClass('hover');
+        });
+        $contents.hover(function () {
+            $contents.addClass('hover');
+        }, function () {
+            $contents.removeClass('hover');
+        });
         //开启滚动条
         $('.scroller').scrollbar();
         $('#backTop').on('click', function () {
@@ -675,3 +675,5 @@ $(function () {
     };
 
 });
+
+
