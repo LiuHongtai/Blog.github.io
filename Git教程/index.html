@@ -2,44 +2,47 @@
 <html>
 
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <meta name="description" content="LiuHongtai.github.io : 个人博客">
-
-        <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css?v=d0b3559e68f882c282ae6e0b0e84c2f4e8f98c3c">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="renderer" content="webkit">
+        <title>EIP开发文档</title>
         <link rel="stylesheet" type="text/css" href="amWiki/css/markdownbody.github.css" />
         <link rel="stylesheet" type="text/css" href="amWiki/css/lhjs.github-gist.css" />
         <link rel="stylesheet" type="text/css" href="amWiki/css/amWiki.css" />
-
-        <!-- Begin Jekyll SEO tag v2.3.0 -->
-        <title>迎来到刘洪太的博客，来跟我一起学习Git吧！ | LiuHongtai.github.io</title>
-        <meta property="og:title" content="迎来到刘洪太的博客，来跟我一起学习Git吧！" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="description" content="个人博客" />
-        <meta property="og:description" content="个人博客" />
-        <link rel="canonical" href="https://liuhongtai.github.io/" />
-        <meta property="og:url" content="https://liuhongtai.github.io/" />
-        <meta property="og:site_name" content="LiuHongtai.github.io" />
-        <script type="application/ld+json">
-        {"name":"LiuHongtai.github.io","description":"个人博客","author":null,"@type":"WebSite","url":"https://liuhongtai.github.io/","image":null,"publisher":null,"headline":"迎来到刘洪太的博客，来跟我一起学习Git吧！","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
-        <!-- End Jekyll SEO tag -->
-
+        
     </head>
 
     <body>
-        <!-- HEADER -->
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-              <a id="forkme_banner" href="https://github.com/LiuHongtai/LiuHongtai.github.io">View on GitHub</a>
-              <h1 id="project_title">LiuHongtai.github.io</h1>
-              <h2 id="project_tagline">个人博客</h2>
-            </header>
-        </div>
-
+        <!-- 头部 -->
+        <header class="header">
+            <div class="header-inner">
+                <a class="logo" href="?file=首页">                    
+                    <b>EIP开发文档</b>
+                    <span>1.0</span>
+                </a>
+                <div class="menu-icon" id="menuIcon">
+                    <svg>
+                        <use xlink:href="#icon:navStart"></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
         <!-- 页面 -->
-        <div class="container" id="container" style="width:80%;margin:20px auto">
+        <div class="container" id="container">
             <div class="nav" id="nav">
+                <div class="menu-filter">
+                    <svg>
+                        <use xlink:href="#icon:navFilter"></use>
+                    </svg>
+                    <input type="text" id="menuFilter" value="" placeholder="请输入筛选条件" title="请输入筛选条件" />
+                    <i class="off" title="清空筛选">&times;</i>
+                </div>
+                <div class="menu-search" id="searchShow" title="全库搜索">
+                    <svg>
+                        <use xlink:href="#icon:search"></use>
+                    </svg>
+                </div>
                 <nav class="menubar scroller" id="menuBar" data-x-rolling="true">
                     <div class="scroller-inner">
                         <div class="scroller-content"></div>
@@ -106,7 +109,7 @@
                         </div>
                     </div>
                     <!-- 接口测试 -->
-
+                    
                 </div>
             </div>
         </div>
@@ -171,11 +174,11 @@
             <script type="text/javascript" src="amWiki/js/amWiki.search.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.search.worker.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.docs.js"></script>
-
+            
             <script type="text/javascript" src="amWiki/js/amWiki.scrollbar.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.imgsView.js"></script>
             <script type="text/javascript" src="amWiki/js/amWiki.js"></script>
-
+            
         </div>
         <!-- svg -->
         <div class="hidden" id="svgSymbols"></div>
