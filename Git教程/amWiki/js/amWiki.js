@@ -600,16 +600,16 @@ $(function () {
     curPath = curPath.replace(/%26/g, '&');
 
     //加载导航
-    loadNav(function (list) {
-        //核对本地存储
-        storage.checkLibChange(list);
-        //读取页面挂载数据文档部分
-        loadPageMounts();
-        //首次打开改变导航
-        changeNav(curPath);
-        //首次打开改变页面
-        changePage(curPath, true, changeScrollByHash);
-    });
+    // loadNav(function (list) {
+    //     //核对本地存储
+    //     storage.checkLibChange(list);
+    //     //读取页面挂载数据文档部分
+    //     loadPageMounts();
+    //     //首次打开改变导航
+    //     changeNav(curPath);
+    //     //首次打开改变页面
+    //     changePage(curPath, true, changeScrollByHash);
+    // });
 
     //history api 浏览器前进后退操作响应
     if (HISTORY_STATE) {
