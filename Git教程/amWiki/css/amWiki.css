@@ -84,7 +84,7 @@ body{position:relative;height:100%;background:#e7e8eb;}
 .menubar h4.on a{color:#0373e4;}
 .menubar h5 svg{position:absolute;top:12px;left:12px;width:13px;height:13px;color:#acacac;-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);}
 .menubar h5.on svg{color:#4296eb;-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);}
-.menubar ul{display:block;margin:0;padding:0;list-style:none;}
+.menubar ul{display:none;margin:0;padding:0;list-style:none;}
 .menubar ul li{padding-left:23px;}
 .menubar .scroller-content > ul > li{padding-left:45px;}
 .menubar ul li.off{display:none;}
