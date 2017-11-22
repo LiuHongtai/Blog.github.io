@@ -112,6 +112,8 @@ button::-moz-focus-inner { border:0; }
 /* bulleted list ++++++++++++++++++++++++++++++++++++++++++++ */
 ul.bullet { padding: 10px 0 20px 0; display: block; overflow: hidden; }
 ul.bullet li { line-height: 47px; list-style: none; display: block; background: transparent url(style/images/bullet.jpg) no-repeat left 21px; padding-left: 15px; }
+ul.bullet1 { padding: 10px 0 20px 0; display: block; overflow: hidden; }
+ul.bullet1 li { line-height: 30px; list-style: none; display: block; background: transparent url(style/images/bullet.jpg) no-repeat left 13px; padding-left: 15px; }
 
 /* check list ++++++++++++++++++++++++++++++++++++++++++++ */
 ul.check_list { padding: 0 0 20px 0; display: block; overflow: hidden; }
